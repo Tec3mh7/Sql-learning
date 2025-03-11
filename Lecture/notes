@@ -1,0 +1,61 @@
+-- just my notes from video to remember few strange things
+
+--  SELECT * FROM flights WHERE origin IN ('New York', 'Warsawa');  =
+
+-- id  origin    DESTINATION  duration
+-- --  --------  -----------  --------
+-- 1   New York  London       415
+-- 3   Warsawa   Riga         60
+-- 4   New York  Barcelona    60
+
+-- SELECT * FROM flights WHERE origin LIKE "%a%";   =
+
+-- anything that origin that include "a"
+
+-- SELECT * FROM flights WHERE origin LIKE "a%";    =
+
+-- anything that have "a" and there is nothing on the left from "a"
+-- example "abort"
+
+-- SELECT * FROM flights WHERE origin LIKE "%a";    =
+
+-- anything that have "a" and there is nothing on the right from "a"
+-- example "troba"
+
+
+--functions:
+-- ACERAGE
+-- COUNT 
+-- MAX
+-- MIN 
+-- SUM
+-- ..
+
+-- UPDATE flights SET DURATION = 420 WHERE id = 4;
+-- SELECT id, DURATION FROM flights WHERE id = 4;   =
+
+--4|420
+
+
+
+--SELECT * FROM flights LIMIT 2;
+
+-- id  origin    DESTINATION  duration
+-- --  --------  -----------  --------
+-- 1   New York  London       415
+-- 3   Warsawa   Riga         60
+
+
+
+
+
+--SELECT * FROM flights ORDER BY origin;
+
+-- id  origin    DESTINATION  duration
+-- --  --------  -----------  --------
+-- 1   New York  London       415
+-- 4   New York  Barcelona    420
+-- 5   Sietl     New York     300
+-- 3   Warsawa   Riga         60
+
+
